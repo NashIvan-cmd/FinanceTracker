@@ -2,11 +2,15 @@ namespace FinanceTracker.Infrastructure.Entities.Budget
 {
     using System.ComponentModel.DataAnnotations.Schema;
     using System.ComponentModel.DataAnnotations;
-    using FinanceTracker.Infrastructure.Entities.User;
+    using FinanceTracker.Infrastructure.Entities.Group;
     using System.Runtime.CompilerServices;
 
     public class Budget : BaseEntity
     {
+        [Key]
+        [Column("id")]
+        public Guid Id { get; set; }
+
         [Required]
         [Column("actual_budget")]
         public double ActualBudget { get; set; }
@@ -45,5 +49,7 @@ namespace FinanceTracker.Infrastructure.Entities.Budget
 
         [ForeignKey("GroupId")]
         public Guid GroupId { get; set; }
+
+        public Group Group { get; set; } = null!;
     }
 }
