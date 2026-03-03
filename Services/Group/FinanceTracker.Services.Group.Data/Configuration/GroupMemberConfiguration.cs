@@ -9,7 +9,7 @@ namespace FinanceTracker.Services.Group.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<GroupMember> builder)
         {
-            builder.ToTable("group_member");
+            builder.ToTable("group_members");
             builder.HasKey(e => e.Id);
 
             builder.Property(e => e.UserId).IsRequired().HasColumnName("user_id");
