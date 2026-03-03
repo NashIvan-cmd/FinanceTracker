@@ -835,11 +835,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nashivan/CSharpProjects/FinanceTracker/Services/User/FinanceTracker.User.Services.Data/FinanceTracker.Services.User.Data.csproj",
-      "projectName": "FinanceTracker.Services.User.Data",
-      "projectPath": "/Users/nashivan/CSharpProjects/FinanceTracker/Services/User/FinanceTracker.User.Services.Data/FinanceTracker.Services.User.Data.csproj",
+      "projectUniqueName": "/Users/nashivan/CSharpProjects/FinanceTracker/Services/Budget/Budget.Services.Data/FinanceTracker.Services.Budget.Data.csproj",
+      "projectName": "FinanceTracker.Services.Budget.Data",
+      "projectPath": "/Users/nashivan/CSharpProjects/FinanceTracker/Services/Budget/Budget.Services.Data/FinanceTracker.Services.Budget.Data.csproj",
       "packagesPath": "/Users/nashivan/.nuget/packages/",
-      "outputPath": "/Users/nashivan/CSharpProjects/FinanceTracker/Services/User/FinanceTracker.User.Services.Data/obj/",
+      "outputPath": "/Users/nashivan/CSharpProjects/FinanceTracker/Services/Budget/Budget.Services.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nashivan/.nuget/NuGet/NuGet.Config"
