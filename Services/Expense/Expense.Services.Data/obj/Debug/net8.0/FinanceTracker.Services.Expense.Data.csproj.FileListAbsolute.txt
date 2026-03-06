@@ -1,5 +1,0 @@
-/Users/nashivan/CSharpProjects/FinanceTracker/Services/Expense/Expense.Services.Data/obj/Debug/net8.0/FinanceTracker.Services.Expense.Data.csproj.AssemblyReference.cache
-/Users/nashivan/CSharpProjects/FinanceTracker/Services/Expense/Expense.Services.Data/obj/Debug/net8.0/FinanceTracker.Services.Expense.Data.GeneratedMSBuildEditorConfig.editorconfig
-/Users/nashivan/CSharpProjects/FinanceTracker/Services/Expense/Expense.Services.Data/obj/Debug/net8.0/FinanceTracker.Services.Expense.Data.AssemblyInfoInputs.cache
-/Users/nashivan/CSharpProjects/FinanceTracker/Services/Expense/Expense.Services.Data/obj/Debug/net8.0/FinanceTracker.Services.Expense.Data.AssemblyInfo.cs
-/Users/nashivan/CSharpProjects/FinanceTracker/Services/Expense/Expense.Services.Data/obj/Debug/net8.0/FinanceTracker.Services.Expense.Data.csproj.CoreCompileInputs.cache
