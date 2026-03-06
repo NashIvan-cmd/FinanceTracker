@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/FinanceTracker.Api.Common.props" />
-</Project>
