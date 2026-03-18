@@ -137,6 +137,12 @@ dist/
 *.tmp
 *.temp
 
+# App Settings (local configuration)
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+!appsettings.json
+
 # OS
 .DS_Store
 Thumbs.db
