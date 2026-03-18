@@ -16,8 +16,10 @@ namespace FinanceTracker.Infrastructure.Entities.Budget
         [ForeignKey("BudgetId")]
         public Guid BudgetId {get; set; }     
 
+        [NotMapped]
         public Budget? Budget { get; set; }  
 
+        [NotMapped]
         public User? User { get; set; }
     }
 }

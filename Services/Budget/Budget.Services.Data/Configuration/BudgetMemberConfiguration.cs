@@ -14,15 +14,8 @@ namespace FinanceTracker.Services.Budget.Data.Configuration
             builder.Property(e => e.BudgetId).IsRequired().HasColumnName("budget_id");
             builder.Property(e => e.UserId).IsRequired().HasColumnName("user_id");
 
-            builder.HasOne(e => e.User)
-                .WithMany()
-                .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.HasOne(e => e.Budget)
-                .WithMany()
-                .HasForeignKey(e => e.BudgetId)
-                .OnDelete(DeleteBehavior.Cascade);
+            // Relationships are managed by their respective DbContexts
+            // We only store the foreign keys here
 
             builder.HasIndex(e => e.BudgetId)
                 .HasDatabaseName("ix_budget_members_budget_id");

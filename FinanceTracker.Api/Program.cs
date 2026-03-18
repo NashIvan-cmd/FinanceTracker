@@ -1,9 +1,21 @@
+using FinanceTracker.Extensions.Injection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Configure PostgreSQL connection string
+var connectionString = builder.Configuration.GetConnectionString("POSTGRESQL")
+    ?? throw new InvalidOperationException("PostgreSQL connection string 'POSTGRESQL' not configured in appsettings.");
+
+// Register DbContexts
+builder.Services
+    .AddGroupDbContext(connectionString)
+    .AddUserDbContext(connectionString)
+    .AddBudgetDbContext(connectionString)
+    .AddTransactionDbContext(connectionString);
 
 var app = builder.Build();
 

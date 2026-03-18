@@ -73,11 +73,10 @@ namespace FinanceTracker.Services.Budget.Data.Configuration
                 .HasMaxLength(256)
                 .HasColumnName("updated_by");
 
-            // Relationships
-            builder.HasOne(e => e.Group)
-                .WithMany(e => e.Budgets)
-                .HasForeignKey(e => e.GroupId)
-                .OnDelete(DeleteBehavior.Cascade);
+            // Foreign key (without navigation - managed by GroupDbContext)
+            builder.Property(e => e.GroupId)
+                .IsRequired()
+                .HasColumnName("group_id");
 
             // Indexes
             builder.HasIndex(e => e.GroupId)

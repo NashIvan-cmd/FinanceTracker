@@ -39,10 +39,12 @@ namespace FinanceTracker.Infrastructure.Entities.Transaction
         // Relationships
         [ForeignKey("UserId")]
         public Guid UserId { get; set; }
+        [NotMapped]
         public User User { get; set; } = null!;
 
         [ForeignKey("GroupId")]
         public Guid? GroupId { get; set; }
+        [NotMapped]
         public Group? Group { get; set; }
 
         [Column("is_deleted")]
