@@ -28,7 +28,7 @@ namespace FinanceTracker.Services.Budget.Data.Migrations
                 name: "budgets",
                 columns: table => new
                 {
-                    id = table.Column<Guid>(type: "uuid", nullable: false, defaultValue: new Guid("bc03e7d4-153f-4328-bd21-95707d1a2d09")),
+                    id = table.Column<Guid>(type: "uuid", nullable: false, defaultValue: new Guid("d2d51592-9c4e-4c6f-a370-bf3369712809")),
                     actual_budget = table.Column<double>(type: "double precision", nullable: false),
                     target_savings = table.Column<double>(type: "double precision", nullable: false),
                     target_items = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),

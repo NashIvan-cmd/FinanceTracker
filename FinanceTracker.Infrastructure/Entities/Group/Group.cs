@@ -6,6 +6,7 @@ namespace FinanceTracker.Infrastructure.Entities.Group
     using FinanceTracker.Infrastructure.Entities.Budget;
     using FinanceTracker.Infrastructure.Entities.Transaction;
 
+    [Table("groups")]
     public class Group
     {
         [Key]

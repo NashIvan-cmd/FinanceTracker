@@ -12,7 +12,7 @@ namespace FinanceTracker.Services.Transaction.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "GroupMember",
+                name: "group_members",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -21,7 +21,7 @@ namespace FinanceTracker.Services.Transaction.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_GroupMember", x => x.Id);
+                    table.PrimaryKey("PK_group_members", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -75,7 +75,7 @@ namespace FinanceTracker.Services.Transaction.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "GroupMember");
+                name: "group_members");
 
             migrationBuilder.DropTable(
                 name: "transactions");
