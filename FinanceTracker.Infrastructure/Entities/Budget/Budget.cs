@@ -5,6 +5,7 @@ namespace FinanceTracker.Infrastructure.Entities.Budget
     using FinanceTracker.Infrastructure.Entities.Group;
     using System.Runtime.CompilerServices;
 
+    [Table("budgets")]
     public class Budget : BaseEntity
     {
         [Key]

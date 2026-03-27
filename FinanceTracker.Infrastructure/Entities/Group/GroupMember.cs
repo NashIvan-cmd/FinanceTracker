@@ -4,6 +4,7 @@ namespace FinanceTracker.Infrastructure.Entities.Group
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Text.RegularExpressions;
     using FinanceTracker.Infrastructure.Entities.User;
+    [Table("group_members")]
     public class GroupMember
     {
         [Key]

@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FinanceTracker.Services.Budget.Data.Migrations
 {
     [DbContext(typeof(BudgetDbContext))]
-    [Migration("20260318084020_InitialCreateBudgetTables")]
-    partial class InitialCreateBudgetTables
+    [Migration("20260321073757_AddDefaultBudgetDistribution")]
+    partial class AddDefaultBudgetDistribution
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,7 +30,7 @@ namespace FinanceTracker.Services.Budget.Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
-                        .HasDefaultValue(new Guid("bc03e7d4-153f-4328-bd21-95707d1a2d09"))
+                        .HasDefaultValue(new Guid("68fe8c06-5493-4e0a-90ab-fa80e7a4fe91"))
                         .HasColumnName("id");
 
                     b.Property<double>("ActualBudget")
@@ -147,6 +147,62 @@ namespace FinanceTracker.Services.Budget.Data.Migrations
                         .HasDatabaseName("ix_budget_members_user_id");
 
                     b.ToTable("budget_members", (string)null);
+                });
+
+            modelBuilder.Entity("FinanceTracker.Infrastructure.Entities.Budget.DefaultBudgetDistribution", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("double precision")
+                        .HasColumnName("amount");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
+                        .HasColumnName("category");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<Guid?>("GroupId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("group_id");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(true)
+                        .HasColumnName("is_active");
+
+                    b.Property<int>("Priority")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(0)
+                        .HasColumnName("priority");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("updated_at");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("user_id");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("UserId", "GroupId", "Priority");
+
+                    b.ToTable("default_budget_distributions", (string)null);
                 });
 #pragma warning restore 612, 618
         }

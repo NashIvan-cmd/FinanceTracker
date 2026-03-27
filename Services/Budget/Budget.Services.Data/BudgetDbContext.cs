@@ -15,14 +15,16 @@
 
         public DbSet<Budget> Budgets { get; set; }
         public DbSet<BudgetMember> BudgetMembers { get; set; }
+        public DbSet<DefaultBudgetDistribution> DefaultBudgetDistributions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             
-            // Only apply Budget and BudgetMember configurations
+            // Only apply Budget, BudgetMember, and DefaultBudgetDistribution configurations
             modelBuilder.ApplyConfiguration(new BudgetConfiguration());
             modelBuilder.ApplyConfiguration(new BudgetMemberConfiguration());
+            modelBuilder.ApplyConfiguration(new DefaultBudgetDistributionConfiguration());
             
             // Explicitly prevent discovery of other entities
             modelBuilder.Ignore<User>();

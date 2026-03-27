@@ -6,6 +6,7 @@ namespace FinanceTracker.Infrastructure.Entities.Transaction
     using FinanceTracker.Infrastructure.Entities.User;
     using FinanceTracker.Infrastructure.Entities.Group;
 
+    [Table("transactions")]
     public class Transaction : BaseEntity
     {
         [Key]

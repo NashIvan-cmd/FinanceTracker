@@ -7,6 +7,7 @@ namespace FinanceTracker.Infrastructure.Entities.User
     using FinanceTracker.Infrastructure.Entities.Group;
     using FinanceTracker.Infrastructure.Entities.Transaction;
 
+    [Table("users")]
     public class User
     {
         [Key]

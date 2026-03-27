@@ -21,6 +21,13 @@
             modelBuilder.Entity<User>()
                 .Ignore(u => u.GroupMemberships)
                 .Ignore(u => u.Transactions);
+            
+            // Ignore entities from other services
+            modelBuilder.Ignore<FinanceTracker.Infrastructure.Entities.Group.Group>();
+            modelBuilder.Ignore<FinanceTracker.Infrastructure.Entities.Group.GroupMember>();
+            modelBuilder.Ignore<FinanceTracker.Infrastructure.Entities.Budget.Budget>();
+            modelBuilder.Ignore<FinanceTracker.Infrastructure.Entities.Budget.BudgetMember>();
+            modelBuilder.Ignore<FinanceTracker.Infrastructure.Entities.Transaction.Transaction>();
         }
     }
 }

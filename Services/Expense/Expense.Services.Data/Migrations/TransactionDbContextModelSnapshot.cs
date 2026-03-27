@@ -36,7 +36,7 @@ namespace FinanceTracker.Services.Transaction.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GroupMember");
+                    b.ToTable("group_members");
                 });
 
             modelBuilder.Entity("FinanceTracker.Infrastructure.Entities.Transaction.Transaction", b =>

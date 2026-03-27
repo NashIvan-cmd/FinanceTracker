@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FinanceTracker.Services.User.Data.Migrations
 {
     [DbContext(typeof(UserDbContext))]
-    [Migration("20260318083056_InitialCreateUserTables")]
+    [Migration("20260321065953_InitialCreateUserTables")]
     partial class InitialCreateUserTables
     {
         /// <inheritdoc />

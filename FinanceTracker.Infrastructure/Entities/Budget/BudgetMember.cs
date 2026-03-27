@@ -4,6 +4,7 @@ namespace FinanceTracker.Infrastructure.Entities.Budget
 {
     using System.ComponentModel.DataAnnotations;
     using FinanceTracker.Infrastructure.Entities.User;
+    [Table("budget_members")]
     public class BudgetMember
     {
         [Key]
