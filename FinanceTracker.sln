@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Api", "FinanceTracker.Api\FinanceTracker.Api.csproj", "{FDD2E8B7-7B93-4E97-B573-CA45FCC25BCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{15BC44ED-9004-4422-94F2-C50E883F2B93}"
@@ -44,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Budget", "Budget", "{EE6379
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Services.Budget.Data", "Services\Budget\Budget.Services.Data\FinanceTracker.Services.Budget.Data.csproj", "{A1C8EC80-A58F-4E21-B999-F25A5CF69DF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Services.Budget", "Services\Budget\FinanceTracker.Services.Budget\FinanceTracker.Services.Budget.csproj", "{6B8AE7F3-0EEF-4062-BE8E-28A772144F06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +89,10 @@ Global
 		{A1C8EC80-A58F-4E21-B999-F25A5CF69DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C8EC80-A58F-4E21-B999-F25A5CF69DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C8EC80-A58F-4E21-B999-F25A5CF69DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8AE7F3-0EEF-4062-BE8E-28A772144F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8AE7F3-0EEF-4062-BE8E-28A772144F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8AE7F3-0EEF-4062-BE8E-28A772144F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8AE7F3-0EEF-4062-BE8E-28A772144F06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,5 +116,6 @@ Global
 		{0E2D4237-A964-4745-89E2-D34EFE870B2A} = {B5087048-543A-9FAD-9147-2FEC97745D86}
 		{EE637903-5294-B71B-F23D-736BAA94073C} = {8152A902-D351-409A-A11F-9DFD8FAA6CC6}
 		{A1C8EC80-A58F-4E21-B999-F25A5CF69DF2} = {EE637903-5294-B71B-F23D-736BAA94073C}
+		{6B8AE7F3-0EEF-4062-BE8E-28A772144F06} = {EE637903-5294-B71B-F23D-736BAA94073C}
 	EndGlobalSection
 EndGlobal

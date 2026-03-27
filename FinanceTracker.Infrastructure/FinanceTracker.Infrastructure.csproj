@@ -15,6 +15,7 @@
       <Folder Include="Exceptions\" />
       <Folder Include="Extensions\" />
       <Folder Include="Logging\" />
+      <Folder Include="Messages/Transaction/" />
       <Folder Include="Messages\" />
       <Folder Include="Services\Interfaces\" />
       <Folder Include="Settings\" />

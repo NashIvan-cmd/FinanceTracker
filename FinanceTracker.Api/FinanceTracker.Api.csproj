@@ -16,10 +16,16 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="../FinanceTracker.Api.Common/FinanceTracker.Api.Common.csproj" />
         <ProjectReference Include="../Services/Group/FinanceTracker.Services.Group.Data/FinanceTracker.Services.Group.Data.csproj" />
         <ProjectReference Include="../Services/User/FinanceTracker.User.Services.Data/FinanceTracker.Services.User.Data.csproj" />
         <ProjectReference Include="../Services/Budget/Budget.Services.Data/FinanceTracker.Services.Budget.Data.csproj" />
         <ProjectReference Include="../Services/Expense/Expense.Services.Data/FinanceTracker.Services.Transaction.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Extensions/Models/" />
+      <Folder Include="Extensions/Models/Transaction/" />
     </ItemGroup>
 
 </Project>
